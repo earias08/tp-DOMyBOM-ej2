@@ -27,3 +27,13 @@ export function validarNumeros(input) {
     input.className += " is-invalid";
   }
 }
+
+// 6 888 777 60 888 777
+export function validarDNI(input){
+    let patron = /^[\d]{1,2}[\d]{3,3}[\d]{3,3}$/;
+    if(patron.test(input.value.trim())){
+        input.className = "form-control is-valid";
+    }else{
+        input.className = "form-control is-invalid";
+    }
+}
