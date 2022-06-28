@@ -25,11 +25,14 @@
                 <form class="bg-light p-3">
                     <div class="mb-3">
                         <label for="nombre">Nombre y apellido</label>
-                        <input type="text" id="nombre" class="form-control">
+                        <input type="text" id="nombre" class="form-control" required>
+                        <div class="invalid-feedback">
+                            prueba de feedback
+                        </div>
                     </div>
                     <div class="mb-3">
                         <label for="edad">Edad</label>
-                        <input type="number" id="edad" class="form-control">
+                        <input type="text" id="edad" class="form-control">
                     </div>
                     <div class="mb-3">
                         <label for="dni">DNI</label>
@@ -55,7 +58,7 @@
                         <label for="fechaNacimiento">Año de Nacimiento</label>
                         <input type="month" id="fechaNacimiento" class="form-control">
                     </div>
-                    <button class="btn btn-primary">Enviar</button>
+                    <button class="btn btn-primary" type="submit">Enviar</button>
                 </form>
             </aside>
             <aside class="col-12 col-md-6 d-none d-md-block">
@@ -73,6 +76,6 @@
       integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
       crossorigin="anonymous"
     ></script>
-    
+    <script src="js/app.js" type="module"></script>
   </body>
 </html>
